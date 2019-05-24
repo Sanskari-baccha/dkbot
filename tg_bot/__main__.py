@@ -28,7 +28,7 @@ You can find the list of available commands with /help.
 If you're enjoying using this bot, please hit /donate to support us or even Skittles, the guy who spiced this bot!
 
 
-BTW! [Mista!](tg://user?id=643364671) is gay
+BTW! @RinMido is gay
 """
 
 HELP_STRINGS = """
@@ -152,7 +152,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
                 parse_mode=ParseMode.MARKDOWN)
     else:
-        update.effective_message.reply_text("Heck, I'm alive :O")
+        update.effective_message.reply_text("Hi, minna! I am here.")
 
 
 # for test purposes
