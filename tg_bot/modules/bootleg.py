@@ -10,20 +10,20 @@ from requests import get
 import urllib.request, json
 
 @run_async
-def device(bot: Bot, update: Update):
+def bootleg(bot: Bot, update: Update):
   # Check this every time because we update info very often
   with urllib.request.urlopen("https://bootleggersrom-devices.github.io/api/devices.json") as url:
     data = json.loads(url.read().decode())
 
   message = update.effective_message
-  text = message.text[len('/device '):].strip()
+  text = message.text[len('/bootleg '):].strip()
   try:
     deviceinfo = data[text]
   except: 
     if text != "":
       reply_error_text = "Sorry, but %s isn't on our official devices list." % text
     else:
-      reply_error_text = "Please, specify your device by using /device `codename` (example `/device mido`)"
+      reply_error_text = "Please, specify your bootleg by using /bootleg `codename` (example `/bootleg mido`)"
 
     message.reply_text(reply_error_text.replace("_","\_"),parse_mode="Markdown")
     raise
@@ -60,13 +60,13 @@ def devicelist(bot: Bot, update: Update):
   message.reply_text(infoDevList,parse_mode="HTML")
 
 __help__ = """
- - /device:{word} Search on our device list if you device is there. example: /device surnia.\n
+ - /bootleg:{word} Search on our bootleg list if you bootleg is there. example: /bootleg surnia.\n
  - /devicelist: See the amount of devices available 
 """
 
 __mod_name__ = "Bootleg Device List"
   
-devlist_handle = DisableAbleCommandHandler("device", device)
+devlist_handle = DisableAbleCommandHandler("bootleg", bootleg)
 devlistinfo_handle = DisableAbleCommandHandler("devicelist", devicelist)
 
 dispatcher.add_handler(devlist_handle)
