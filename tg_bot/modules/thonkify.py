@@ -61,6 +61,7 @@ __help__ = """
  thonkify very imp
  made by @rupansh and @devrism :D
 """
+__mod_name__ = "Thonkify"
 
 THONKIFY_HANDLER = DisableAbleCommandHandler("thonkify", thonkify, admin_ok=True)
 dispatcher.add_handler(THONKIFY_HANDLER)
