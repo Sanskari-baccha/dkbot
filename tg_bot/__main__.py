@@ -19,13 +19,16 @@ from tg_bot.modules.helper_funcs.chat_status import is_user_admin
 from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-Hey {}, I'm {}! I'm a group manager bot maintained by [this dude](tg://user?id={}).
+Hey {}, I'm {}! I'm a group manager bot maintained by [this dude](tg://user?id=790033172).
 I'm built in python3, using the python-telegram-bot library, and am fully opensource - you can find our fork \
-[here](github.com/AnggaR96s/Irene) and you'll see i'm based on [Skittbot](https://github.com/skittles9823/SkittBot) and [Marie](github.com/PaulSonOfLars/tgbot)!
+[here](https://github.com/darkthur/dkbot) and you'll see i'm based on [Skittbot](https://github.com/skittles9823/SkittBot) and [Marie](github.com/PaulSonOfLars/tgbot)!
 
 You can find the list of available commands with /help.
 
 If you're enjoying using this bot, please hit /donate to support us or even Skittles, the guy who spiced this bot!
+
+
+BTW! [Mista!](tg://user?id=643364671) is gay
 """
 
 HELP_STRINGS = """
