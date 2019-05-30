@@ -64,7 +64,7 @@ __help__ = """
  - /devicelist: See the amount of devices available 
 """
 
-__mod_name__ = "RevellionOS Devices List"
+__mod_name__ = "RebellionOS Devices List"
   
 devlist_handle = DisableAbleCommandHandler("device", device)
 devlistinfo_handle = DisableAbleCommandHandler("devicelist", devicelist)
