@@ -27,8 +27,6 @@ You can find the list of available commands with /help.
 
 If you're enjoying using this bot, please hit /donate to support us or even Skittles, the guy who spiced this bot!
 
-
-BTW! @RinMido is gay
 """
 
 HELP_STRINGS = """
