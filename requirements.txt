@@ -21,6 +21,6 @@ PyLyrics
 pyowm
 googletrans
 gsearch
-py_translator
+py-translator
 wikipedia
 hurry.filesize
