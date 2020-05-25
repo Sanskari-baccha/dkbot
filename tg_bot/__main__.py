@@ -19,13 +19,13 @@ from tg_bot.modules.helper_funcs.chat_status import is_user_admin
 from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-Hey {}, I'm {}! I'm a group manager bot maintained by [this dude](tg://user?id=790033172).
-I'm built in python3, using the python-telegram-bot library, and am fully opensource - you can find our fork \
-[here](https://github.com/darkthur/dkbot) and you'll see i'm based on [Skittbot](https://github.com/skittles9823/SkittBot) and [Marie](github.com/PaulSonOfLars/tgbot)!
+Hey {}, I'm {}! I'm a group manager bot maintained by [this dude](tg://user?id=1171354752).
+
+
 
 You can find the list of available commands with /help.
 
-If you're enjoying using this bot, please hit /donate to support us or even Skittles, the guy who spiced this bot!
+
 
 """
 
@@ -38,7 +38,7 @@ the things I can help you with.
  - /start: start the bot
  - /help: PM's you this message.
  - /help <module name>: PM's you info about that module.
- - /donate: information about how to donate!
+
  - /settings:
    - in PM: will send you your settings for all supported modules.
    - in a group: will redirect you to pm, with all that chat's settings.
@@ -47,13 +47,13 @@ the things I can help you with.
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-DONATE_STRING = """Hey, thanks for considering donating! This bot is fully intended to help everyone\
-so, if you want to support our project you can \
-[donate](paypal.me/anggaxyz) as we can get some upgrades in the future \
-like, get a VPS or something.\n\n\
-Or also, consider donate to [Skittles](tg://user?id=427673272), who did this beautiful piece of meme bot. \
-That will help him to continuing hosting his original bot! \n\n \
-Or even consider to donate to [Paul](tg://user?id=254318997), the guy who did incredible helpful bots like Marie and Rose! You can do it on his [PayPal](paypal.me/PaulSonOfLars), or [Monzo](monzo.me/paulnionvestergaardlarsen)."""
+
+
+
+
+
+
+
 
 IMPORTED = {}
 MIGRATEABLE = []
